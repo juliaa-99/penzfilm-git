@@ -291,7 +291,7 @@ h3 {
       .header__logo img {
         max-width: 72px; } }
   .header__holder {
-    width: 73%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -309,7 +309,7 @@ h3 {
         width: 85%; } }
     @media screen and (max-width: 1200px) {
       .header__holder {
-        width: 80%; } }
+        width: 86%; } }
     @media screen and (max-width: 991px) {
       .header__holder {
         width: 100%;
@@ -421,9 +421,12 @@ h3 {
     margin: 0 38px;
     display: inline-block;
     vertical-align: middle; }
+    @media screen and (max-width: 1500px) {
+      .header__menu ul li {
+        margin: 0 20px; } }
     @media screen and (max-width: 1200px) {
       .header__menu ul li {
-        margin: 0 15px; } }
+        margin: 0 10px; } }
     @media screen and (max-width: 991px) {
       .header__menu ul li {
         display: block;
@@ -590,7 +593,7 @@ h3 {
       max-width: 100%; }
   .spec__info {
     width: 59%;
-    padding-left: 165px;
+    padding-left: 70px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     @media screen and (max-width: 1300px) {
@@ -832,7 +835,7 @@ h3 {
         flex-direction: column-reverse; } }
   .tx__text {
     width: 50%;
-    padding-right: 150px;
+    padding-right: 70px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     @media screen and (max-width: 1200px) {
@@ -1600,6 +1603,9 @@ h3 {
           font-size: 18px; } }
       .jrnl__news-tt:hover {
         color: #E05050; }
+    .jrnl__news-btn {
+      margin-top: 30px;
+      text-align: right; }
 
 .team {
   margin-top: 80px; }
@@ -1852,7 +1858,13 @@ h3 {
         .team-item__inner {
           display: block; } }
     .team-item__tx {
-      width: 35%; }
+      width: 35%;
+      position: relative;
+      z-index: 3; }
+      @media screen and (max-width: 1400px) {
+        .team-item__tx {
+          width: 45%;
+          padding-right: 50px; } }
       @media screen and (max-width: 991px) {
         .team-item__tx {
           width: 100%; } }
@@ -1948,6 +1960,9 @@ h3 {
       position: relative;
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }
+      @media screen and (max-width: 1400px) {
+        .team-item__sl {
+          width: 55%; } }
       @media screen and (max-width: 1200px) {
         .team-item__sl {
           padding-right: 0;
@@ -2502,7 +2517,7 @@ h3 {
       background-size: cover; }
     .projects-item__video:after {
       content: '';
-      width: 500px;
+      width: 250px;
       height: 100%;
       display: block;
       position: absolute;
@@ -3114,6 +3129,9 @@ h3 {
     @media screen and (max-width: 1460px) {
       .about-history__mb {
         margin-right: -20px; } }
+    @media screen and (max-width: 768px) {
+      .about-history__mb {
+        margin-right: 0; } }
   .about-history__slider {
     position: relative; }
     .about-history__slider .swiper-slide {
@@ -3125,6 +3143,9 @@ h3 {
       max-height: 560px;
       padding-bottom: 10px;
       position: relative; }
+      @media screen and (max-width: 768px) {
+        .about-history__slider-item {
+          max-height: inherit; } }
     .about-history__slider-ye {
       font-weight: 500;
       font-size: 28px;
@@ -3151,6 +3172,9 @@ h3 {
       @media screen and (max-width: 991px) {
         .about-history__slider-descr {
           margin-top: 25px; } }
+      @media screen and (max-width: 768px) {
+        .about-history__slider-descr {
+          max-width: 100%; } }
       .about-history__slider-descr p {
         font-size: 16px;
         line-height: 140%;
@@ -3177,6 +3201,10 @@ h3 {
         .about-history__slider-tx {
           min-height: 340px;
           padding: 20px 0 63px; } }
+      @media screen and (max-width: 768px) {
+        .about-history__slider-tx {
+          padding-bottom: 20px;
+          min-height: auto; } }
     .about-history__slider-img {
       max-height: 560px;
       height: 100%;
@@ -3205,13 +3233,13 @@ h3 {
           max-width: 403px; } }
       @media screen and (max-width: 768px) {
         .about-history__slider-img {
-          max-width: 150px;
-          width: 150px;
-          overflow: hidden; }
-          .about-history__slider-img img {
-            width: auto !important;
-            position: absolute;
-            right: -80px; } }
+          padding-bottom: 63px;
+          width: 100%;
+          max-width: 100%;
+          position: relative;
+          right: 0 !important; }
+          .about-history__slider-img:after {
+            display: none !important; } }
       .about-history__slider-img-ye {
         position: absolute;
         top: 25px;

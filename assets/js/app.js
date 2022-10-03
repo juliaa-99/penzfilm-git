@@ -59,6 +59,7 @@ $(document).ready(function () {
     var swiper4 = new Swiper(".js-history-slider", {
         spaceBetween: 20,
         slidesPerView: "auto",
+        autoHeight: true,
         navigation: {
             nextEl: ".history-arrow-next",
             prevEl: ".history-arrow-prev"
